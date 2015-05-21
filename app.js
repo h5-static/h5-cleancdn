@@ -15,10 +15,10 @@ app.all("/", function(req, res){
 	console.log("清楚cdn缓存地址"+url);
 
 	Request("http://workflow.dp/api/v0.1/cdn/refresh/h5?url="+url, function (error, response, body) {
-		res.send(response);
-		res.send(body);	
-		res.end();
+		console.log(response);
+		console.log(body);	
 	})
+	res.end();
 });
 
 app.listen(9567);

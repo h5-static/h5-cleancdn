@@ -1,5 +1,5 @@
 {
-  "name": "h5-clearcdn",
+  "name": "h5-cleancdn",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/h5-static/h5-clearcdn.git"
+    "url": "https://github.com/h5-static/h5-cleancdn.git"
   },
   "author": "yyy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/h5-static/h5-clearcdn/issues"
+    "url": "https://github.com/h5-static/h5-cleancdn/issues"
   },
   "homepage": "https://github.com/h5-static/h5-clearcdn",
   "dependencies": {

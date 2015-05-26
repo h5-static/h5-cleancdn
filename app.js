@@ -16,9 +16,8 @@ app.all("/", function(req, res){
 	Request.post('http://workflow.dp/api/v0.1/cdn/refresh/h5', {form:{url:url}}, function (error, response, body) {
 		res.status(200);
 		res.send(body);
+		res.end();
 	});
-
-	res.end();
 });
 
 app.listen(9567);

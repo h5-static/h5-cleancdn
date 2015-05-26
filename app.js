@@ -14,7 +14,6 @@ app.all("/", function(req, res){
 	var url = (req.query&&req.query.url) || "";
 	// console.log("清楚cdn缓存地址"+url);
 	Request.post('http://workflow.dp/api/v0.1/cdn/refresh/h5', {form:{url:url}}, function (error, response, body) {
-		var res = JSON.parse(body);
 		res.status(200);
 		res.send(body);
 	});
